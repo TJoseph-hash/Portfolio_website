@@ -26,11 +26,10 @@ It serves as a hub to learn more about me and connect with my work.
 
 ## 🛠️ Tech Stack  
 
-- **Frontend:** HTML5, CSS3, JavaScript (or React if used)  
-- **Backend (optional):** Node.js / Firebase / Express  
-- **Database (optional):** Firebase / MongoDB / SQL  
-- **Hosting:** GitHub Pages / Netlify / Vercel  
-- **Other Tools:** Git, OpenAI API (for AI features), Firebase Auth/DB (if used)  
+- **Frontend:** HTML5, CSS3, JavaScript   
+- **Backend :** / JavaScript   
+- **Hosting:**  Firebase
+
 
 ---
 
