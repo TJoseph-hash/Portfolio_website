@@ -16,7 +16,7 @@
                 <div class="logo">
                     <a href="#home"><span>&lt;</span> TJ<span>/&gt;</span></a>
                 </div>
-                <ul class="nav-links">
+                <ul class="nav-links" id="primary-navigation">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#skills">Skills</a></li>
@@ -26,11 +26,11 @@
                     <li><a href="#certifications">Certifications</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
-                <div class="hamburger">
+                <button class="hamburger" type="button" aria-label="Open navigation menu" aria-controls="primary-navigation" aria-expanded="false">
                     <div class="line"></div>
                     <div class="line"></div>
                     <div class="line"></div>
-                </div>
+                </button>
             </nav>
         </div>
     </header>
@@ -41,9 +41,9 @@
             <div class="hero-content">
                 <div class="hero-text">
                     <br>
-                    <h1>Tishawn Joseph</h1>
-                    <h2>Aspiring Security Engineer</h2>
-                    <p>I'm Tishawn Joseph. A BSc Computer Science student at the University of the West Indies with a strong academic background including an ASc in Computer Science and mathematics.I'm highly interested in Cybersecurity and currently seeking to build my professional experience in the field to apply my knowledge,develop practical skills, and  contribute to securing digital assets.</p>
+                    <h1 aria-label="Tishawn Joseph"><span class="hero-name-text" aria-hidden="true">Tishawn Joseph</span></h1>
+                    <h2>Cybersecurity Specialist</h2>
+                    <p>Cybersecurity-focused professional with practical industry experience across cloud security, penetration testing, and IT infrastructure from roles at EY Caribbean and Davyn Ltd. Equipped with certifications like the eJPT and a strong academic track record, I am passionate about applying my skills to protect digital assets and mitigate security risks as I complete my BSc in Computer Science at the University of the West Indies.</p>
                     <div class="cta-buttons">
                         <a href="#contact" class="btn primary-btn">Get In Touch</a>
                         <a href="#projects" class="btn secondary-btn">View Projects</a>
@@ -56,9 +56,14 @@
                 </div>
                 <div class="hero-image">
                     <div class="security-graphic">
-                        <div class="shield">
+                        <div class="security-icons">
+                            <div class="shield security-icon defense-icon" aria-hidden="true">
                             <i class="fas fa-shield-alt"></i>
                             <div class="ripple"></div>
+                        </div>
+                            <div class="security-icon offense-icon" aria-hidden="true">
+                                <i class="fas fa-user-secret"></i>
+                            </div>
                         </div>
                         <div class="binary">01101001 01101110 01100110 01101111 01110011 01100101 01100011</div>
                     </div>
@@ -75,9 +80,13 @@
                 <div class="underline"></div>
             </div>
             <div class="about-content">
+                <div class="about-photo">
+                    <img src="tishawn-joseph.png" alt="Portrait of Tishawn Joseph">
+                </div>
                 <div class="about-text">
-                    <p>I am a passionate Cybersecurity professional with a strong focus on Vulnerability Assessment and Penetration Testing.</p>
-                    <p>Currently pursuing my BSc Computer Science  I am constantly expanding my knowledge and skills in the rapidly evolving field of information security.</p>
+                    <p>I am an aspiring Security Engineer and Application Security specialist with a strong foundation in IT, software development, and cybersecurity. My journey in technology is driven by a passion for translating complex technical concepts into clear insights, building resilient systems, and safeguarding digital assets.</p>
+                    <p>With hands-on professional experience spanning cloud security assessments and governance at Ernst & Young (EY Caribbean), cloud engineering and IAM implementation at Davyn Ltd, and secure full-stack development at The Student Hub Ltd, I bridge the gap between robust software engineering and proactive defense.</p>
+                    <p>Equipped with industry certifications such as the eJPT and ISC2 CC, a background in IT support and network monitoring, and a proven academic track record—including a 4.0 GPA Associate degree in Computer Science and Pure Mathematics—I bring a disciplined, details-oriented, and results-driven approach to every project. Currently, I am expanding my technical expertise further as I complete my BSc in Computer Science at the University of the West Indies.</p>
                 </div>
                 <div class="contact-info">
                     <div class="contact-item">
@@ -115,14 +124,17 @@
                     <h3>Programming & Scripting</h3>
                     <div class="skills-grid">
                         <div class="skill-item"><span>Javascript</span></div>
+                        <div class="skill-item"><span>HTML</span></div>
+                        <div class="skill-item"><span>CSS</span></div>
                         <div class="skill-item"><span>Python</span></div>
                         <div class="skill-item"><span>C++</span></div>
+                        <div class="skill-item"><span>Java</span></div>
                     </div>
                 </div>
                 <div class="skill-category">
                     <h3>Tools & Technologies</h3>
                     <div class="skills-grid">
-                        <div class="skill-item"><span>AWS</span></div>
+                        <div class="skill-item"><span>Azure</span></div>
                         <div class="skill-item"><span>MySQL</span></div>
                         <div class="skill-item"><span>Oracle SQL</span></div>
                         <div class="skill-item"><span>GitHub</span></div>
@@ -259,7 +271,7 @@ I can conduct penetration testing, vulnerability assessments, and security audit
     <section id="experience" class="experience">
         <div class="container">
             <div class="section-header">
-                <h2>Experience</h2>
+                <h2>Work Experience</h2>
                 <div class="underline"></div>
             </div>
             <div class="timeline">
@@ -268,17 +280,46 @@ I can conduct penetration testing, vulnerability assessments, and security audit
                         <i class="fas fa-briefcase"></i>
                     </div>
                     <div class="timeline-content">
-                        <h3>Incoming Cybersecurity intern @ Ernst & young(EY)</h3>
-                        <h4>EY</h4>
-                        <span class="timeline-date">June 2025 – Aug 2025</span>
+                        <h3>Software Engineer Intern | Remote</h3>
+                        <h4>CapitalWhit </h4>
+                        <span class="timeline-date">August 2026 –  2026</span>
                         <ul>
-                      
+                            <li>Develop responsive and high-performance web applications using Next.js, React, and modern JavaScript/TypeScript. </li>
+                            <li>Design and manage relational databases with PostgreSQL, including schema design, query optimization, and data integrity.</li>
+                            <li>Implement secure authentication, authorization, and role-based access control.</li>
+                            <li>Optimize application performance, scalability, and reliability through efficient coding practices.</li>
+                            
                         </ul>
                     </div>
                     <div class="timeline-content">
-                        <h3>Projectionist/IT Technician(Part Time) @ Caribbean Cinemas</h3>
+                        <h3>Cloud Security Engineer Intern | Remote</h3>
+                        <h4>Davyn Ltd </h4>
+                        <span class="timeline-date">May 2026 – August 2026</span>
+                        <ul>
+                            <li>Configured, maintained, and optimized Microsoft Azure cloud environments for clients, supporting the deployment and ongoing management of cloud infrastructure, identity services, networking, storage, and Microsoft Dynamics 365 Business Central solutions to meet business and operational requirements. </li>
+                            <li> Conducted cloud security assessments and gap analyses using cybersecurity frameworks and Capsule, evaluating client environments, identifying security risks, recommending remediation strategies, and supporting cloud governance, compliance, and security best practices.</li>
+                            <li>Supported pre-sales and consulting engagements by gathering client requirements, presenting Azure-based solutions, contributing to solution design discussions, and providing technical recommendations that aligned business objectives with secure cloud adoption strategies.</li>
+                            <li>Administered Microsoft Intune for device onboarding and endpoint management, monitored and investigated security events and logs, assisted with threat detection and incident analysis, and implemented security controls including Microsoft Entra ID (Azure AD), RBAC, and conditional access policies to strengthen organizational security posture.</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Software Engineer -Security (Contract) | Remote</h3>
+                        <h4>The Student Hub Ltd </h4>
+                        <span class="timeline-date">Jan 2026 – May 2026</span>
+                        <ul>
+                            <li>Designed and maintained secure full-stack applications using React (frontend), Flask (backend), and PostgreSQL (database).</li>
+                            <li>Applied cybersecurity best practices to ensure regulatory compliance, data integrity, and protection of digital assets. </li>
+                            <li>Ensured secure development practices through thorough testing, validation of AI model outputs, and automation workflows,
+                            reducing risks of data leakage and integrity issues.</li>
+                            <li>Collaborated with cross-functional teams using Linear to manage workflows and deliver project milestones.</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Projectionist/IT Support Technician(Part Time) | On-site </h3>
                         <h4>Caribbean Cinemas</h4>
-                        <span class="timeline-date">June 2024 – present</span>
+                        <span class="timeline-date">June 2024 – Feb 2026</span>
                         <ul>
                             <li>Operated & maintained projection equipment for seamless screenings.</li>
                             <li>Monitored system performance metrics for troublshooting</li>
@@ -290,14 +331,34 @@ I can conduct penetration testing, vulnerability assessments, and security audit
                         </ul>
                     </div>
                     <div class="timeline-content">
-                        <h3>IT Assitant @ Ansa Mcal (Contract)</h3>
-                        <h4>Ansa Mcal</h4>
-                        <span class="timeline-date">November 2023 – Feb 2024</span>
+                        <h3>AI Automation Developer Intern  | Remote </h3>
+                        <h4>Polarex </h4>
+                        <span class="timeline-date">July 2025 – August 2025</span>
                         <ul>
-                            <li>Assisted in data Management & analysis for improved  reporting</li>
-                            <li>Streamlined Software installation  processes for efficiency</li>
-                            <li>Coordinated with cross-functional teams to ensure operational efficiency </li>
-                            <li>Provided technical support to end-users, resolving hardware and software issues</li>
+                            <li>Developed and deployed AI-powered applications to boost client productivity by building APIs, backend services, and
+                            frontend integrations, while ensuring application security controls, scalability, and compliance with industry best practices.</li>
+                            <li>Evaluated hosting solutions (web, cloud, and local environments) by analyzing trade-offs in performance, security, and
+                            scalability, supporting informed infrastructure decisions.</li>
+                            <li>Ensured secure development practices through thorough testing, validation of AI model outputs, and automation workflows,
+                            reducing risks of data leakage and integrity issues.</li>
+                            <li>Ensured secure development practices through thorough testing, validation of AI model outputs, and automation workflows,
+                            reducing risks of data leakage and integrity issues</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Cybersecurity Intern | Hybrid </h3>
+                        <h4>Ernst & young(EY)</h4>
+                        <span class="timeline-date">June 2025 – July 2025</span>
+                        <ul>
+                         <b></b>
+                         <li>Drafted and updated comprehensive cybersecurity IT security policies, covering critical domains such as access control, incident response, network security, monitoring and logging, and backup and disaster recovery. This involved aligning documentation with industry standards and best practices to support risk management and regulatory compliance for clients.</li>
+                         <li>Collaborated with senior team members to ensure policies addressed evolving threat landscapes and organizational needs, contributing to a robust security governance framework.</li>
+                         <b>Threat Intelligence and Research</b>
+                         <li>Conducted targeted threat intelligence research, focusing on ransomware incidents affecting organizations within Trinidad and Tobago. This included analyzing attack patterns, identifying exploited vulnerabilities, and compiling actionable insights to inform client risk assessments and incident response strategies.</li>
+                         <li>Produced detailed reports on regional cyber threats, supporting clients in understanding their threat environment and enhancing their preparedness against similar attacks.</li>
+                         <b>Penetration Testing and Vulnerability Assessment</b>
+                         <li>Assisted in performing penetration testing and vulnerability assessments for client organizations, identifying security weaknesses and recommending mitigation strategies. This hands-on technical work contributed to strengthening clients' security postures and reducing exposure to cyber threats.</li>
 
                         </ul>
                     </div>
@@ -365,16 +426,16 @@ I can conduct penetration testing, vulnerability assessments, and security audit
                 <div class="underline"></div>
             </div>
             <div class="certifications-grid">
-                <div class="certification-card">
+                <button class="certification-card" type="button" aria-haspopup="dialog" data-certificate="certificates/google-cybersecurity.pdf">
                     <div class="certification-logo">
                         <i class="fas fa-shield-alt"></i>
                     </div>
                     <div class="certification-content">
                         <h3>Google Cybersecurity Professional Certificate</h3>
-                        <p>Google Coursea</p>
+                        <p>Google Coursera</p>
                     </div>
-                </div>
-                <div class="certification-card">
+                </button>
+                <button class="certification-card" type="button" aria-haspopup="dialog" data-certificate="certificates/isc2-cc.pdf">
                     <div class="certification-logo">
                         <i class="fas fa-shield-alt"></i>
                     </div>
@@ -382,12 +443,37 @@ I can conduct penetration testing, vulnerability assessments, and security audit
                         <h3>ISC2 CC</h3>
                         <p>ISC2</p>
                     </div>
+                </button>
+                <button class="certification-card" type="button" aria-haspopup="dialog" data-certificate="certificates/ejpt-junior-penetration-tester.pdf">
+                    <div class="certification-logo">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="certification-content">
+                        <h3>INE EJPT - Junior Penetration Tester</h3>
+                        <p>INE</p>
                 </div>
-                
-                </div>
+                </button>
+                <button class="certification-card" type="button" aria-haspopup="dialog" data-certificate="certificates/az-104.pdf">
+                    <div class="certification-logo">
+                        <i class="fab fa-microsoft" aria-hidden="true"></i>
+                    </div>
+                    <div class="certification-content">
+                        <h3>Microsoft Certified: Azure Administrator Associate (AZ-104)</h3>
+                        <p>Microsoft</p>
+                    </div>
+                </button>
             </div>
         </div>
     </section>
+
+    <dialog class="certification-dialog" aria-labelledby="certification-preview-title">
+        <div class="certification-dialog-header">
+            <h2 id="certification-preview-title">Certification</h2>
+        <button class="certification-dialog-close" type="button" aria-label="Close certification preview">&times;</button>
+        </div>
+        <iframe class="certification-document" title="Certification PDF preview"></iframe>
+        <a class="certification-download" target="_blank" rel="noopener">Open or download PDF</a>
+    </dialog>
 
  
 
@@ -446,7 +532,7 @@ I can conduct penetration testing, vulnerability assessments, and security audit
                     <a href="#contact">Contact</a>
                 </div>
                 <div class="footer-bottom">
-                    <p>&copy; 2025 Tishawn Joseph. All Rights Reserved.</p>
+                    <p>&copy; 2026 Tishawn Joseph. All Rights Reserved.</p>
                 </div>
             </div>
         </div>
@@ -454,6 +540,6 @@ I can conduct penetration testing, vulnerability assessments, and security audit
 
 
 
-    <script src="script.js"></script>
+    <script src="function.js"></script>
 </body>
 </html>
