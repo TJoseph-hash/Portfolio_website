@@ -518,6 +518,8 @@ nav {
 @media (prefers-reduced-motion: reduce) {
     .security-icon { transition: none; }
     .ripple { animation: none; }
+    .defense-icon,
+    .offense-icon { animation: none !important; }
     .hero-name-text { animation: none !important; border-right-color: transparent; }
 }
 

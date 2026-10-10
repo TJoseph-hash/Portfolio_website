@@ -1,0 +1,118 @@
+[debug] [2026-10-10T19:36:36.962Z] ----------------------------------------------------------------------
+[debug] [2026-10-10T19:36:36.965Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\tisha\AppData\Local\npm-cache\_npx\7750544ccf494d8b\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting --project cybersecurity-portfolio-8a0af
+[debug] [2026-10-10T19:36:36.965Z] CLI Version:   15.33.0
+[debug] [2026-10-10T19:36:36.966Z] Platform:      win32
+[debug] [2026-10-10T19:36:36.966Z] Node Version:  v24.18.0
+[debug] [2026-10-10T19:36:36.966Z] Detected Agent: codex_cli
+[debug] [2026-10-10T19:36:36.966Z] Time:          Sat Oct 10 2026 15:36:36 GMT-0400 (Atlantic Standard Time)
+[debug] [2026-10-10T19:36:36.967Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-10-10T19:36:38.492Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-10-10T19:36:38.492Z] > authorizing via signed-in user (tishawnjoseph16@gmail.com)
+[debug] [2026-10-10T19:36:38.492Z] [iam] checking project cybersecurity-portfolio-8a0af for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2026-10-10T19:36:38.509Z] Checked if tokens are valid: true, expires at: 1791663842154
+[debug] [2026-10-10T19:36:38.509Z] Checked if tokens are valid: true, expires at: 1791663842154
+[debug] [2026-10-10T19:36:38.511Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/cybersecurity-portfolio-8a0af:testIamPermissions [none]
+[debug] [2026-10-10T19:36:38.512Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/cybersecurity-portfolio-8a0af:testIamPermissions  x-goog-user-project=cybersecurity-portfolio-8a0af
+[debug] [2026-10-10T19:36:38.512Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/cybersecurity-portfolio-8a0af:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-10-10T19:36:38.997Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/cybersecurity-portfolio-8a0af:testIamPermissions 200
+[debug] [2026-10-10T19:36:38.997Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/cybersecurity-portfolio-8a0af:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-10-10T19:36:38.998Z] Checked if tokens are valid: true, expires at: 1791663842154
+[debug] [2026-10-10T19:36:38.998Z] Checked if tokens are valid: true, expires at: 1791663842154
+[debug] [2026-10-10T19:36:38.999Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/cybersecurity-portfolio-8a0af [none]
+[debug] [2026-10-10T19:36:39.574Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/cybersecurity-portfolio-8a0af 200
+[debug] [2026-10-10T19:36:39.574Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/cybersecurity-portfolio-8a0af {"projectId":"cybersecurity-portfolio-8a0af","projectNumber":"1080436956960","displayName":"Cybersecurity Portfolio","name":"projects/cybersecurity-portfolio-8a0af","resources":{"hostingSite":"cybersecurity-portfolio-8a0af"},"state":"ACTIVE","labels":{"firebase":"enabled"},"etag":"1_0c368b05-3198-411b-92d6-4e50f07587e2"}
+[info] 
+[info] === Deploying to 'cybersecurity-portfolio-8a0af'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2026-10-10T19:36:39.578Z] Checked if tokens are valid: true, expires at: 1791663842154
+[debug] [2026-10-10T19:36:39.578Z] Checked if tokens are valid: true, expires at: 1791663842154
+[debug] [2026-10-10T19:36:39.578Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/cybersecurity-portfolio-8a0af/sites/cybersecurity-portfolio-8a0af [none]
+[debug] [2026-10-10T19:36:40.270Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/cybersecurity-portfolio-8a0af/sites/cybersecurity-portfolio-8a0af 200
+[debug] [2026-10-10T19:36:40.271Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/cybersecurity-portfolio-8a0af/sites/cybersecurity-portfolio-8a0af {"name":"projects/cybersecurity-portfolio-8a0af/sites/cybersecurity-portfolio-8a0af","defaultUrl":"https://cybersecurity-portfolio-8a0af.web.app","type":"DEFAULT_SITE"}
+[debug] [2026-10-10T19:36:40.276Z] Checked if tokens are valid: true, expires at: 1791663842154
+[debug] [2026-10-10T19:36:40.276Z] Checked if tokens are valid: true, expires at: 1791663842154
+[debug] [2026-10-10T19:36:40.277Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/cybersecurity-portfolio-8a0af/sites/cybersecurity-portfolio-8a0af/versions [none]
+[debug] [2026-10-10T19:36:40.278Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/cybersecurity-portfolio-8a0af/sites/cybersecurity-portfolio-8a0af/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2026-10-10T19:36:40.695Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/cybersecurity-portfolio-8a0af/sites/cybersecurity-portfolio-8a0af/versions 200
+[debug] [2026-10-10T19:36:40.695Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/cybersecurity-portfolio-8a0af/sites/cybersecurity-portfolio-8a0af/versions {"name":"projects/cybersecurity-portfolio-8a0af/sites/cybersecurity-portfolio-8a0af/versions/f09e3460ef30ed15","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[cybersecurity-portfolio-8a0af]: beginning deploy... 
+[info] i  hosting[cybersecurity-portfolio-8a0af]: found 9 files in public 
+[debug] [2026-10-10T19:36:40.708Z] [hosting] uploading with 200 concurrency
+[debug] [2026-10-10T19:36:40.709Z] [hosting] hash cache [cHVibGlj] not populated
+[debug] [2026-10-10T19:36:40.823Z] Checked if tokens are valid: true, expires at: 1791663842154
+[debug] [2026-10-10T19:36:40.823Z] Checked if tokens are valid: true, expires at: 1791663842154
+[debug] [2026-10-10T19:36:40.824Z] [hosting] hash cache [cHVibGlj] stored for 9 files
+[debug] [2026-10-10T19:36:40.824Z] [hosting][hash queue][FINAL] {"max":113,"min":5,"avg":18.77777777777778,"active":0,"complete":9,"success":9,"errored":0,"retried":0,"total":9,"elapsed":115}
+[debug] [2026-10-10T19:36:40.825Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/cybersecurity-portfolio-8a0af/sites/cybersecurity-portfolio-8a0af/versions/f09e3460ef30ed15:populateFiles [none]
+[debug] [2026-10-10T19:36:40.825Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/cybersecurity-portfolio-8a0af/sites/cybersecurity-portfolio-8a0af/versions/f09e3460ef30ed15:populateFiles {"files":{"/function.js":"d9298c3db2d14a297eb536a44ada39454f19b283affa2f416426bf648bd378fb","/index.html":"628c7c02d96a262b28fa6c0f34bc0ab2be79acb6fde9c2fa264d732e80497909","/style.css":"e98c2f0be9289df26d1b4132844cb0814ef237ecd085105e63f0dd0f89318ce4","/404.html":"41d1e074106979fb6591ec6953bfe5ace2788be22f0ed4189bd54905ebb5b44d","/certificates/az-104.pdf":"4304df756027e4c5b05b29ac11174b743e3d1ef123f792f75d278f0f95c04200","/certificates/ejpt-junior-penetration-tester.pdf":"56dd5f4f7207687459f0d64b5148fc2fae5d146a3e463c28a6225388267e00b3","/certificates/google-cybersecurity.pdf":"8b4e236e10ced0b6bbceb97914c4f2f020aabbd25d8c8738e535877d9abea697","/certificates/isc2-cc.pdf":"851a6da257bac502f7e3cecfc47b35fd2f40b572fcc2f05bb22e09cbc040adbd","/tishawn-joseph.png":"3a501bf1bc82ab009ad143cd5b653ec576c70d6fa5539d7e34614614fdb20e52"}}
+[debug] [2026-10-10T19:36:41.088Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/cybersecurity-portfolio-8a0af/sites/cybersecurity-portfolio-8a0af/versions/f09e3460ef30ed15:populateFiles 200
+[debug] [2026-10-10T19:36:41.088Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/cybersecurity-portfolio-8a0af/sites/cybersecurity-portfolio-8a0af/versions/f09e3460ef30ed15:populateFiles {"uploadRequiredHashes":["e98c2f0be9289df26d1b4132844cb0814ef237ecd085105e63f0dd0f89318ce4","d9298c3db2d14a297eb536a44ada39454f19b283affa2f416426bf648bd378fb","628c7c02d96a262b28fa6c0f34bc0ab2be79acb6fde9c2fa264d732e80497909"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/cybersecurity-portfolio-8a0af/versions/f09e3460ef30ed15/files"}
+[debug] [2026-10-10T19:36:41.089Z] Checked if tokens are valid: true, expires at: 1791663842154
+[debug] [2026-10-10T19:36:41.089Z] Checked if tokens are valid: true, expires at: 1791663842154
+[debug] [2026-10-10T19:36:41.089Z] Checked if tokens are valid: true, expires at: 1791663842154
+[debug] [2026-10-10T19:36:41.089Z] Checked if tokens are valid: true, expires at: 1791663842154
+[debug] [2026-10-10T19:36:41.089Z] Checked if tokens are valid: true, expires at: 1791663842154
+[debug] [2026-10-10T19:36:41.090Z] Checked if tokens are valid: true, expires at: 1791663842154
+[debug] [2026-10-10T19:36:41.090Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/cybersecurity-portfolio-8a0af/versions/f09e3460ef30ed15/files/e98c2f0be9289df26d1b4132844cb0814ef237ecd085105e63f0dd0f89318ce4 [none]
+[debug] [2026-10-10T19:36:41.090Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/cybersecurity-portfolio-8a0af/versions/f09e3460ef30ed15/files/e98c2f0be9289df26d1b4132844cb0814ef237ecd085105e63f0dd0f89318ce4 [stream]
+[debug] [2026-10-10T19:36:41.091Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/cybersecurity-portfolio-8a0af/versions/f09e3460ef30ed15/files/d9298c3db2d14a297eb536a44ada39454f19b283affa2f416426bf648bd378fb [none]
+[debug] [2026-10-10T19:36:41.092Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/cybersecurity-portfolio-8a0af/versions/f09e3460ef30ed15/files/d9298c3db2d14a297eb536a44ada39454f19b283affa2f416426bf648bd378fb [stream]
+[debug] [2026-10-10T19:36:41.093Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/cybersecurity-portfolio-8a0af/versions/f09e3460ef30ed15/files/628c7c02d96a262b28fa6c0f34bc0ab2be79acb6fde9c2fa264d732e80497909 [none]
+[debug] [2026-10-10T19:36:41.093Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/cybersecurity-portfolio-8a0af/versions/f09e3460ef30ed15/files/628c7c02d96a262b28fa6c0f34bc0ab2be79acb6fde9c2fa264d732e80497909 [stream]
+[debug] [2026-10-10T19:36:41.098Z] [hosting][populate queue][FINAL] {"max":268,"min":268,"avg":268,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":276}
+[debug] [2026-10-10T19:36:41.098Z] [hosting] uploads queued: 3
+[debug] [2026-10-10T19:36:41.951Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/cybersecurity-portfolio-8a0af/versions/f09e3460ef30ed15/files/628c7c02d96a262b28fa6c0f34bc0ab2be79acb6fde9c2fa264d732e80497909 200
+[debug] [2026-10-10T19:36:41.951Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/cybersecurity-portfolio-8a0af/versions/f09e3460ef30ed15/files/628c7c02d96a262b28fa6c0f34bc0ab2be79acb6fde9c2fa264d732e80497909 [stream]
+[debug] [2026-10-10T19:36:41.995Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/cybersecurity-portfolio-8a0af/versions/f09e3460ef30ed15/files/e98c2f0be9289df26d1b4132844cb0814ef237ecd085105e63f0dd0f89318ce4 200
+[debug] [2026-10-10T19:36:41.995Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/cybersecurity-portfolio-8a0af/versions/f09e3460ef30ed15/files/e98c2f0be9289df26d1b4132844cb0814ef237ecd085105e63f0dd0f89318ce4 [stream]
+[debug] [2026-10-10T19:36:42.037Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/cybersecurity-portfolio-8a0af/versions/f09e3460ef30ed15/files/d9298c3db2d14a297eb536a44ada39454f19b283affa2f416426bf648bd378fb 200
+[debug] [2026-10-10T19:36:42.037Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/cybersecurity-portfolio-8a0af/versions/f09e3460ef30ed15/files/d9298c3db2d14a297eb536a44ada39454f19b283affa2f416426bf648bd378fb [stream]
+[debug] [2026-10-10T19:36:42.037Z] [hosting][upload queue][FINAL] {"max":948,"min":862,"avg":905.6666666666666,"active":0,"complete":3,"success":3,"errored":0,"retried":0,"total":3,"elapsed":949}
+[info] i  hosting: upload complete 
+[info] +  hosting[cybersecurity-portfolio-8a0af]: file upload complete 
+[debug] [2026-10-10T19:36:42.037Z] [hosting] deploy completed after 1340ms
+[debug] [2026-10-10T19:36:42.038Z] [
+  {
+    "config": {
+      "public": "public",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "cybersecurity-portfolio-8a0af"
+    },
+    "version": "projects/cybersecurity-portfolio-8a0af/sites/cybersecurity-portfolio-8a0af/versions/f09e3460ef30ed15"
+  }
+]
+[info] i  hosting[cybersecurity-portfolio-8a0af]: finalizing version... 
+[debug] [2026-10-10T19:36:42.040Z] Checked if tokens are valid: true, expires at: 1791663842154
+[debug] [2026-10-10T19:36:42.040Z] Checked if tokens are valid: true, expires at: 1791663842154
+[debug] [2026-10-10T19:36:42.040Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/cybersecurity-portfolio-8a0af/sites/cybersecurity-portfolio-8a0af/versions/f09e3460ef30ed15 updateMask=status%2Cconfig
+[debug] [2026-10-10T19:36:42.040Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/cybersecurity-portfolio-8a0af/sites/cybersecurity-portfolio-8a0af/versions/f09e3460ef30ed15 {"status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]}}
+[debug] [2026-10-10T19:36:42.298Z] <<< [apiv2][status] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/cybersecurity-portfolio-8a0af/sites/cybersecurity-portfolio-8a0af/versions/f09e3460ef30ed15 200
+[debug] [2026-10-10T19:36:42.299Z] <<< [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/cybersecurity-portfolio-8a0af/sites/cybersecurity-portfolio-8a0af/versions/f09e3460ef30ed15 {"name":"projects/cybersecurity-portfolio-8a0af/sites/cybersecurity-portfolio-8a0af/versions/f09e3460ef30ed15","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2026-10-10T19:36:41.477410Z","createUser":{"email":"tishawnjoseph16@gmail.com"},"finalizeTime":"2026-10-10T19:36:43.296803Z","finalizeUser":{"email":"tishawnjoseph16@gmail.com"}}
+[debug] [2026-10-10T19:36:42.299Z] [hosting] finalized version for cybersecurity-portfolio-8a0af:[object Object]
+[info] +  hosting[cybersecurity-portfolio-8a0af]: version finalized 
+[info] i  hosting[cybersecurity-portfolio-8a0af]: releasing new version... 
+[debug] [2026-10-10T19:36:42.299Z] Checked if tokens are valid: true, expires at: 1791663842154
+[debug] [2026-10-10T19:36:42.299Z] Checked if tokens are valid: true, expires at: 1791663842154
+[debug] [2026-10-10T19:36:42.299Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/cybersecurity-portfolio-8a0af/sites/cybersecurity-portfolio-8a0af/channels/live/releases versionName=projects%2Fcybersecurity-portfolio-8a0af%2Fsites%2Fcybersecurity-portfolio-8a0af%2Fversions%2Ff09e3460ef30ed15
+[debug] [2026-10-10T19:36:42.299Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/cybersecurity-portfolio-8a0af/sites/cybersecurity-portfolio-8a0af/channels/live/releases {}
+[debug] [2026-10-10T19:36:42.589Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/cybersecurity-portfolio-8a0af/sites/cybersecurity-portfolio-8a0af/channels/live/releases 200
+[debug] [2026-10-10T19:36:42.589Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/cybersecurity-portfolio-8a0af/sites/cybersecurity-portfolio-8a0af/channels/live/releases {"name":"projects/cybersecurity-portfolio-8a0af/sites/cybersecurity-portfolio-8a0af/channels/live/releases/1791661003013000","version":{"name":"projects/cybersecurity-portfolio-8a0af/sites/cybersecurity-portfolio-8a0af/versions/f09e3460ef30ed15","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2026-10-10T19:36:41.477410Z","createUser":{"email":"tishawnjoseph16@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocKdxI9M8xBq-ICjIHDwrITkHJJPxw0yk4aCZVFnRqAvVPMtEpTr1g"},"finalizeTime":"2026-10-10T19:36:43.296803Z","finalizeUser":{"email":"tishawnjoseph16@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocKdxI9M8xBq-ICjIHDwrITkHJJPxw0yk4aCZVFnRqAvVPMtEpTr1g"}},"type":"DEPLOY","releaseTime":"2026-10-10T19:36:43.013Z","releaseUser":{"email":"tishawnjoseph16@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocKdxI9M8xBq-ICjIHDwrITkHJJPxw0yk4aCZVFnRqAvVPMtEpTr1g"}}
+[debug] [2026-10-10T19:36:42.590Z] [hosting] release: {"name":"projects/cybersecurity-portfolio-8a0af/sites/cybersecurity-portfolio-8a0af/channels/live/releases/1791661003013000","version":{"name":"projects/cybersecurity-portfolio-8a0af/sites/cybersecurity-portfolio-8a0af/versions/f09e3460ef30ed15","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2026-10-10T19:36:41.477410Z","createUser":{"email":"tishawnjoseph16@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocKdxI9M8xBq-ICjIHDwrITkHJJPxw0yk4aCZVFnRqAvVPMtEpTr1g"},"finalizeTime":"2026-10-10T19:36:43.296803Z","finalizeUser":{"email":"tishawnjoseph16@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocKdxI9M8xBq-ICjIHDwrITkHJJPxw0yk4aCZVFnRqAvVPMtEpTr1g"}},"type":"DEPLOY","releaseTime":"2026-10-10T19:36:43.013Z","releaseUser":{"email":"tishawnjoseph16@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocKdxI9M8xBq-ICjIHDwrITkHJJPxw0yk4aCZVFnRqAvVPMtEpTr1g"}}
+[info] +  hosting[cybersecurity-portfolio-8a0af]: release complete 
+[info] 
+[info] +  Deploy complete! 
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/cybersecurity-portfolio-8a0af/overview
+[info] Hosting URL: https://cybersecurity-portfolio-8a0af.web.app
